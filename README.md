@@ -1,17 +1,21 @@
-Wejive (Python Version)
-======================
+# Wejive (Python Version - DEPRECATED)
 
-Reverse engineered drivers for the `We-Vibe
-<http://www.we-vibe.com>`__ line of bluetooth controlled vibrators.
+## DEPRECATED
 
-Description
------------
+This repo never really went anywhere, and has been superceded by the
+[Buttplug Sex Control Framework](https://buttplug.io). If you are
+looking for WeVibe protocol information, check out
+[STPIHKAL](https://stpihkal.docs.buttplug.io).
+
+## Description
+
+Reverse engineered drivers for the (We-Vibe)[http://www.we-vibe.com]
+line of bluetooth controlled vibrators.
 
 We-Vibe is the name of both a company and the line of vibrators sold
 by that company. 
 
-Protocol
---------
+## Protocol
 
 Wevibe toys uses BTLE to connect to a host, with no pairing or long
 term key exchange. After this, the host can send pattern selection and
@@ -28,16 +32,14 @@ XX - Index of the pattern
 Y - "Internal" motor power (4-bit)
 Z - "External" motor power (4-bit)
 
-Python Implementation
----------------------
+## Python Implementation
 
 The python implementation in the library allows access to the
 aforementioned functionality. As it is using pybluez and gattlib, it
 will currently only work on linux (and also requires some boost
 installs. Sorry. I'm not happy about it either.).
 
-License
--------
+## License
 
 wejibe-py is BSD licensed.
 
